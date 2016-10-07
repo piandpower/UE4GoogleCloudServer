@@ -1,0 +1,10 @@
+application: UE4DedicatedServer
+version: 1
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /.*
+  script: post.php
+- url: request
+  script:request.php
