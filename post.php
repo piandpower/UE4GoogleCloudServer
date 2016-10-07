@@ -36,7 +36,7 @@ if(isset($DecodedPost["SecureCode"]))
 			$State = $DecodedPost["State"];
 			
 			if($State == "Started")
-				$db->Insert(array("IP" => $ServerIP.":".$Port, "State" => $State );
+				$db->Insert(array("IP" => $ServerIP.":".$Port, "State" => $State ));
 				$db->Execute("Servers");
 			
 			if($State == "InGame")
