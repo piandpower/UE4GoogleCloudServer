@@ -1,4 +1,4 @@
-application: UE4DedicatedServer
+application: uefourdediserver
 version: 1
 runtime: php55
 api_version: 1
