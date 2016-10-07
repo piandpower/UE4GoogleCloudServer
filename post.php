@@ -28,7 +28,7 @@ if(isset($DecodedPost["SecureCode"]))
 {
 	if($DecodedPost["SecureCode"] == Config::Get("server.code"))
 	{
-		if(isset($DecodedPost["Port"])
+		if(isset($DecodedPost["Port"]))
 		{
 			//Get Your new VMs IP Adress
 			$ServerIP = $_SERVER["REMOTE_ADDR"];
