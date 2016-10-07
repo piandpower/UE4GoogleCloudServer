@@ -9,7 +9,7 @@ function ValidJSON($str) {
    json_decode($str);
    return json_last_error() == JSON_ERROR_NONE;
 }
-
+echo "Hello!";
 //Get the Servers Post Request!
 $ServerPost = file_get_contents("php://input");
 
@@ -41,7 +41,7 @@ if(isset($DecodedPost["SecureCode"]))
 			
 			if($State == "InGame")
 				$db->Where("IP", $ServerIP.":".$Port, "=");
-				$db->Update(array("State" => $State))
+				$db->Update(array("State" => $State));
 				$db->Execute("Servers");
 			
 			if($State == "Shutdown")
